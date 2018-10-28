@@ -27,7 +27,7 @@ class RegisterController: UIViewController {
     
     @IBAction func registerBtmPressed(_ sender: Any) {
     
-    
+        print("yeah!")
     
     }
     
