@@ -88,7 +88,6 @@
                                                         <state key="normal" title="Register"/>
                                                         <connections>
                                                             <action selector="registerBtmPressed:" destination="fuB-r8-8cV" eventType="touchUpInside" id="1fD-4i-u24"/>
-                                                            <segue destination="3t9-Iv-7d7" kind="show" id="JbO-G3-3Ju"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -127,6 +126,7 @@
                     <connections>
                         <outlet property="emailTextfield" destination="NDD-LR-bDA" id="hFo-c3-zf2"/>
                         <outlet property="passwordTextfield" destination="naa-vU-cHv" id="xYv-lc-Ru4"/>
+                        <segue destination="3t9-Iv-7d7" kind="show" identifier="goToHome" id="hLK-C1-vZg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ohn-5v-bxT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -186,7 +186,6 @@
                                                         <state key="normal" title="Login"/>
                                                         <connections>
                                                             <action selector="loginBtnPressed:" destination="LcO-xG-tky" eventType="touchUpInside" id="9I6-wX-Z8J"/>
-                                                            <segue destination="3t9-Iv-7d7" kind="show" id="yn7-Ob-oe5"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -225,6 +224,7 @@
                     <connections>
                         <outlet property="emailTextField" destination="HwN-N4-cO9" id="CSA-u3-frZ"/>
                         <outlet property="passwordTextField" destination="5Ae-hd-RBp" id="FGa-Hb-pns"/>
+                        <segue destination="3t9-Iv-7d7" kind="show" identifier="goToHome" id="Wq7-i0-ed7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7cO-WF-nG1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -249,6 +249,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="yn7-Ob-oe5"/>
+        <segue reference="Wq7-i0-ed7"/>
     </inferredMetricsTieBreakers>
 </document>

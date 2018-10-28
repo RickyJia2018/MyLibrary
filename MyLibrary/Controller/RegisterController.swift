@@ -7,13 +7,12 @@
 //
 
 import UIKit
-
+import Firebase
+import SVProgressHUD
 class RegisterController: UIViewController {
     @IBOutlet weak var emailTextfield: UITextField!
     
     @IBOutlet weak var passwordTextfield: UITextField!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,9 +24,26 @@ class RegisterController: UIViewController {
    
     
     
-    @IBAction func registerBtmPressed(_ sender: Any) {
     
-        print("yeah!")
+    
+    @IBAction func registerBtmPressed(_ sender: Any) {
+        SVProgressHUD.show()
+        Auth.auth().createUser(withEmail: emailTextfield.text!, password: passwordTextfield.text!) { (user, error) in
+            
+            if error != nil
+            {
+                print(error!)
+            }else{
+                SVProgressHUD.dismiss()
+                self.performSegue(withIdentifier: "goToHome", sender: self)
+                
+            }
+            
+            
+        }
+        
+        
+        
     
     }
     
