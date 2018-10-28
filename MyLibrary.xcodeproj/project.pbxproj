@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		4A2B7C0E218514D10069DD2B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B7C0D218514D10069DD2B /* AppDelegate.swift */; };
-		4A2B7C10218514D10069DD2B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B7C0F218514D10069DD2B /* ViewController.swift */; };
+		4A2B7C10218514D10069DD2B /* WelcomController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B7C0F218514D10069DD2B /* WelcomController.swift */; };
 		4A2B7C13218514D10069DD2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B7C11218514D10069DD2B /* Main.storyboard */; };
 		4A2B7C15218514D20069DD2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B7C14218514D20069DD2B /* Assets.xcassets */; };
 		4A2B7C18218514D20069DD2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B7C16218514D20069DD2B /* LaunchScreen.storyboard */; };
+		4A2B7C2521851B1E0069DD2B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4A2B7C2421851B1E0069DD2B /* GoogleService-Info.plist */; };
+		4A2B7C2721864AAD0069DD2B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B7C2621864AAD0069DD2B /* LoginController.swift */; };
+		4A2B7C2921864ABB0069DD2B /* RegisterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2B7C2821864ABB0069DD2B /* RegisterController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4A2B7C0A218514D10069DD2B /* MyLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A2B7C0D218514D10069DD2B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4A2B7C0F218514D10069DD2B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4A2B7C0F218514D10069DD2B /* WelcomController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomController.swift; sourceTree = "<group>"; };
 		4A2B7C12218514D10069DD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A2B7C14218514D20069DD2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4A2B7C17218514D20069DD2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4A2B7C19218514D20069DD2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4A2B7C2421851B1E0069DD2B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4A2B7C2621864AAD0069DD2B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		4A2B7C2821864ABB0069DD2B /* RegisterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,49 @@
 		4A2B7C0C218514D10069DD2B /* MyLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				4A2B7C0D218514D10069DD2B /* AppDelegate.swift */,
-				4A2B7C0F218514D10069DD2B /* ViewController.swift */,
-				4A2B7C11218514D10069DD2B /* Main.storyboard */,
-				4A2B7C14218514D20069DD2B /* Assets.xcassets */,
-				4A2B7C16218514D20069DD2B /* LaunchScreen.storyboard */,
 				4A2B7C19218514D20069DD2B /* Info.plist */,
+				4A2B7C2421851B1E0069DD2B /* GoogleService-Info.plist */,
+				4A2B7C21218515060069DD2B /* Controller */,
+				4A2B7C20218515000069DD2B /* Model */,
+				4A2B7C1F218514DA0069DD2B /* View */,
+				4A2B7C14218514D20069DD2B /* Assets.xcassets */,
+				4A2B7C23218515520069DD2B /* Supporting Files */,
 			);
 			path = MyLibrary;
+			sourceTree = "<group>";
+		};
+		4A2B7C1F218514DA0069DD2B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B7C11218514D10069DD2B /* Main.storyboard */,
+				4A2B7C16218514D20069DD2B /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		4A2B7C20218515000069DD2B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4A2B7C21218515060069DD2B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4A2B7C0D218514D10069DD2B /* AppDelegate.swift */,
+				4A2B7C0F218514D10069DD2B /* WelcomController.swift */,
+				4A2B7C2621864AAD0069DD2B /* LoginController.swift */,
+				4A2B7C2821864ABB0069DD2B /* RegisterController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		4A2B7C23218515520069DD2B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,6 +164,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A2B7C18218514D20069DD2B /* LaunchScreen.storyboard in Resources */,
+				4A2B7C2521851B1E0069DD2B /* GoogleService-Info.plist in Resources */,
 				4A2B7C15218514D20069DD2B /* Assets.xcassets in Resources */,
 				4A2B7C13218514D10069DD2B /* Main.storyboard in Resources */,
 			);
@@ -135,7 +177,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4A2B7C10218514D10069DD2B /* ViewController.swift in Sources */,
+				4A2B7C2921864ABB0069DD2B /* RegisterController.swift in Sources */,
+				4A2B7C10218514D10069DD2B /* WelcomController.swift in Sources */,
+				4A2B7C2721864AAD0069DD2B /* LoginController.swift in Sources */,
 				4A2B7C0E218514D10069DD2B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
